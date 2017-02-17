@@ -2,6 +2,7 @@ mod array;
 pub mod date_and_time;
 pub mod floats;
 mod integers;
+mod money;
 mod primitives;
 #[cfg(feature = "uuid")]
 mod uuid;
