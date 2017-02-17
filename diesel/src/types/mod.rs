@@ -134,6 +134,10 @@ use std::io::Write;
 
 /// The text SQL type.
 ///
+/// NOTE: In PostgreSQL, Diesel is currently unable to sanitize `0x00 ` from Rust's String type.
+///       Inserting such data will cause a runtime error. Please refer to [this issue]: https://github.com/diesel-rs/diesel/issues/284
+///       on Github for more information.
+///
 /// On all backends strings must be valid UTF-8.
 /// On PostgreSQL strings must not include nul bytes.
 ///
