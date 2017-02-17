@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["OnConflictExtension","Adds extension methods related to PG upsert"]]});
